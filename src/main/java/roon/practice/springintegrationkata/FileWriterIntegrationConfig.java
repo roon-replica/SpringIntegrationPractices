@@ -21,7 +21,7 @@
 //    }
 //
 //    @Bean
-//    @ServiceActivator(inputChannel = "fileWriterChannel")   // inputChannel로부터 메세지를 받고... FileWritingMessageHandler의 인스턴스로 정의된 서비스?에 넘겨준다고 함....
+//    @ServiceActivator(inputChannel = "fileWriterChannel")   // inputChannel로부터 메세지를 받고... MessageHandler 인터페이스를 구현한 클래스에 전달한다고 함. (messageHandler를 통해 서비스를 호출)
 //    public FileWritingMessageHandler fileWriter(){
 //        var handler = new FileWritingMessageHandler(new File("target-dir"));
 //        handler.setExpectReply(false); // 응답 채널?을 사용하지 않음을 의미한다고 함..
