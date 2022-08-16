@@ -1,4 +1,4 @@
-package roon.practice.springintegrationkata;
+package roon.practice.springintegrationkata.book;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +7,9 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.GenericMessage;
 
-import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class FileWriterIntegrationConfigTest {
