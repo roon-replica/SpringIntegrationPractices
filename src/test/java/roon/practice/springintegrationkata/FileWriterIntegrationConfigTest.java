@@ -7,6 +7,9 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.GenericMessage;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SpringBootTest
 class FileWriterIntegrationConfigTest {
     @Autowired
@@ -14,7 +17,7 @@ class FileWriterIntegrationConfigTest {
 
     @Test
     public void test() {
-        Message<String> msg = new GenericMessage<>("message");
+        Message<String> msg = new GenericMessage<>("message", Map.of("file_name","file name from header"));
 
         fileWriterChannel.send(msg);
     }
