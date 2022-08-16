@@ -13,12 +13,12 @@ import java.util.Map;
 @SpringBootTest
 class FileWriterIntegrationConfigTest {
     @Autowired
-    private MessageChannel fileWriterChannel;
+    private MessageChannel textInChannel;
 
     @Test
     public void test() {
         Message<String> msg = new GenericMessage<>("message", Map.of("file_name","file name from header"));
 
-        fileWriterChannel.send(msg);
+        textInChannel.send(msg);
     }
 }

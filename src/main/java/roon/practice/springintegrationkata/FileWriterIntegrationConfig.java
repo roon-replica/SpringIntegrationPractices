@@ -17,7 +17,7 @@ public class FileWriterIntegrationConfig {
     @Bean
     @Transformer(inputChannel = "textInChannel", outputChannel = "fileWriterChannel")   // inputChannel의 메세지를 받아서 outputChannel로 쓰는 통합 플로우 변환기..
     public GenericTransformer<String, String> uppercaseTransformer(){
-        return String::toUpperCase;
+        return String::toUpperCase; //TODO: 왜 대문자로 안 바꿔주지? 디버깅해보니 여기로 들어오긴 하는데 -> textInChannel이 아니라 곧바로 fileWriterChannel로 쓰고 있었다..!!!
     }
 
     @Bean
