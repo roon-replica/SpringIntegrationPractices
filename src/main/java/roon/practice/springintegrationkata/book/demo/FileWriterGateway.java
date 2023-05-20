@@ -1,4 +1,4 @@
-package roon.practice.springintegrationkata.book;
+package roon.practice.springintegrationkata.book.demo;
 
 import org.springframework.integration.annotation.MessagingGateway;
 import org.springframework.integration.file.FileHeaders;
@@ -16,5 +16,6 @@ defaultRequestChannel: 해당 인터페이스의 메서드 호출(누가 호출�
 
 @MessagingGateway(defaultRequestChannel = "textInChannel")
 public interface FileWriterGateway {
-    void writeToFile(@Header(FileHeaders.FILENAME) String filename, String data);
+
+	void writeToFile(@Header(FileHeaders.FILENAME) String filename, String data);
 }
