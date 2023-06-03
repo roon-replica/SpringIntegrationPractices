@@ -1,13 +1,13 @@
-package roon.practice.springintegrationkata.book;
+package roon.practice.helloworld.book;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringIntegrationKataApplication {
+public class HelloWorldApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringIntegrationKataApplication.class, args);
+        SpringApplication.run(HelloWorldApplication.class, args);
     }
 
 }

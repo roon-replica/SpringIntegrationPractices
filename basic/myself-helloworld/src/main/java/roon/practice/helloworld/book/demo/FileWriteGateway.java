@@ -1,4 +1,4 @@
-package roon.practice.springintegrationkata.book.demo;
+package roon.practice.helloworld.book.demo;
 
 import org.springframework.integration.annotation.MessagingGateway;
 import org.springframework.integration.file.FileHeaders;

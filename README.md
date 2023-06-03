@@ -5,6 +5,21 @@
 - 내부 메세징 기능을 이용해서 재밌는+유용한 기능도 만들어보고 싶음
 
 
+# features
+- [x] hello world myself (file-메세징 예제)
+- [ ] mail 통합해보기
+- [ ] JPA 통합?
+- [ ] http 통합?
+- [ ] rest-http 통합?
+- [ ] kafka 통합?
+- [ ] kafka DSL?
+- [ ] retry?
+
+
+# 애플리케이션 수준 만들어볼거
+- 상품같은거 저장하고 조회하는거 해보지 뭐..
+
+
 # 주요 개념
 - message
 - message channel
@@ -22,7 +37,9 @@
   message의 내용 또는 header를 보고 결정
 
 # 참고 자료
-- [spring integration example github](https://github.com/SimpleProgramming/spring-integration-example)
-- [spring integration docs](https://docs.spring.io/spring-integration/reference/html/index.html)
+- [Spring Integration docs](https://docs.spring.io/spring-integration/reference/html/index.html)
+- [Spring Integration Samples](https://github.com/spring-projects/spring-integration-samples)
+- [Spring integration simple example codes](https://github.com/SimpleProgramming/spring-integration-example)
 - spring in action 챕터 9(스프링 통합하기)
+
 

@@ -1,4 +1,4 @@
-package roon.practice.springintegrationkata.book;
+package roon.practice.helloworld.book;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
