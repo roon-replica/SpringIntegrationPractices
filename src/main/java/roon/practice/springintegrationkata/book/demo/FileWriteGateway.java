@@ -14,8 +14,8 @@ defaultRequestChannel: 해당 인터페이스의 메서드 호출(누가 호출�
 애플리케이션을 메세지 채널과 이어주는 역할이라 생각하면 될듯!
  */
 
-@MessagingGateway(defaultRequestChannel = "textInChannel")
-public interface FileWriterGateway {
+@MessagingGateway(defaultRequestChannel = "fileWriteInputChannel")
+public interface FileWriteGateway {
 
-	void writeToFile(@Header(FileHeaders.FILENAME) String filename, String data);
+    void writeToFile(@Header(FileHeaders.FILENAME) String filename, String data);
 }

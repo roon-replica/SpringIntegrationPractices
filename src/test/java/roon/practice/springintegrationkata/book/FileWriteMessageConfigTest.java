@@ -9,17 +9,15 @@ import org.springframework.messaging.support.GenericMessage;
 
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
-class FileWriterIntegrationConfigTest {
+class FileWriteMessageConfigTest {
     @Autowired
-    private MessageChannel textInChannel;
+    private MessageChannel fileWriteInputChannel;
 
     @Test
     public void test() {
-        Message<String> msg = new GenericMessage<>("message", Map.of("file_name","file name from header"));
+        Message<String> message = new GenericMessage<>("sample message", Map.of("file_name", "sample_file_name"));
 
-        textInChannel.send(msg);
+        fileWriteInputChannel.send(message);
     }
 }
